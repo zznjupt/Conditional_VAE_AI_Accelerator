@@ -1,1 +1,1 @@
-# Conditional VAE AI Accelerator with Verilog RTL
+# Conditional-VAE-seq2seq AI Accelerator with Verilog RTL
