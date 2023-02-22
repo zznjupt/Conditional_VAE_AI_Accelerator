@@ -1,2 +1,3 @@
 RTL/*.sv
 data
+Makefile
