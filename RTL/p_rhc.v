@@ -1,3 +1,5 @@
+// 双曲CORDIC的旋转模式计算自然指数函数
+// rotation mode of hyperbolic CORDIC (RHC)
 module p_rhc # (
     parameter        DATA_WIDTH  = 32,
     parameter signed ATANH       = 32'd35999,
