@@ -1,1 +1,1 @@
-# Conditional-VAE-seq2seq AI Accelerator with Verilog RTL
+# GRU AI Accelerator with Verilog RTL
