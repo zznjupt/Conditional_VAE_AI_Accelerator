@@ -1,7 +1,7 @@
 module np_rhc # (
     parameter        DATA_WIDTH  = 32,
     parameter signed M_ATANH     = 32'd386121,
-    parameter        shift       = 0
+    parameter        shift       = 16
 ) (
     input  wire                             clk,
     input  wire signed [DATA_WIDTH-1:0]     x_in,
