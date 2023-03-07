@@ -160,4 +160,5 @@ always @(*) begin
     else
         D_out_next = (32'd1 << CORDIC_QUAN) - (Z_in[41] << 1);
 end
+
 endmodule

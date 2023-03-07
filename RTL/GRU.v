@@ -1,7 +1,7 @@
 module GRU # (
-    parameter DATA_WIDTH = 32, 
-    parameter QUAN = 24,
-    parameter CORDIC_QUAN = 16
+    parameter DATA_WIDTH    = 32, 
+    parameter QUAN          = 24,
+    parameter CORDIC_QUAN   = 16
 ) (
     input  wire                         clk,
     input  wire signed [DATA_WIDTH-1:0] data_ir,
@@ -140,6 +140,5 @@ end
 always @(posedge clk) begin
     data_hidden_out <= T_cross_reg + Z_cross_reg;
 end
-
 
 endmodule
