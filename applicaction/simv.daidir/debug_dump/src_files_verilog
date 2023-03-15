@@ -1,9 +1,0 @@
-/home/ICer/work/GRU_AI_Accelerator/RTL/GRU.v
-/home/ICer/work/GRU_AI_Accelerator/RTL/NP_RHC.v
-/home/ICer/work/GRU_AI_Accelerator/RTL/P_RHC.v
-/home/ICer/work/GRU_AI_Accelerator/RTL/VLC.v
-/home/ICer/work/GRU_AI_Accelerator/RTL/cordic.v
-/home/ICer/work/GRU_AI_Accelerator/applicaction/sim/CVAE_tb.v
-/home/ICer/work/GRU_AI_Accelerator/applicaction/sim/CVAE_top.v
-/home/ICer/work/GRU_AI_Accelerator/applicaction/sim/FullyConnection.v
-/home/ICer/work/GRU_AI_Accelerator/applicaction/sim/rams_sp_wf.v
