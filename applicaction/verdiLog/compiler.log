@@ -1,0 +1,19 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -sv
+    -f rtl.f
+        ./sim/CVAE_tb.v
+        ./sim/CVAE_top.v
+        ./sim/FullyConnection.v
+        ./sim/rams_sp_wf.v
+        ../RTL/GRU.v
+        ../RTL/cordic.v
+        ../RTL/VLC.v
+        ../RTL/P_RHC.v
+        ../RTL/NP_RHC.v
+
+Highest level modules:
+CVAE_tb
+
+Total	0 error(s),   0 warning(s)

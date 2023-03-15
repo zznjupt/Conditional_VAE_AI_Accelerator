@@ -1,4 +1,5 @@
-// Single-Port Block RAM Write-First Mode (recommended template)// File: rams_sp_wf.v
+// Single-Port Block RAM Write-First Mode (recommended template)
+// File: rams_sp_wf.v
 module rams_sp_wf #(
     parameter depth = 16,
     parameter data_width = 32,

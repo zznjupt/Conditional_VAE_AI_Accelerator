@@ -1,0 +1,3 @@
+Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -sv -f rtl.f -ssf tb.fsdb -nologo
+uname(Linux IC_EDA 3.10.0-1160.83.1.el7.x86_64 #1 SMP Wed Jan 25 16:41:43 UTC 2023 x86_64)
+au time 142670.590765 396.307756 952.465075 delta 345915392 345915392 total 771006464 771006464

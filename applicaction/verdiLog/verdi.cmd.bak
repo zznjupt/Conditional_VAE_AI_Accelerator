@@ -1,0 +1,574 @@
+debImport "-sv" "-f" "rtl.f"
+debLoadSimResult /home/ICer/work/GRU_AI_Accelerator/applicaction/tb.fsdb
+wvCreateWindow
+srcHBDrag -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvRenameGroup -win $_nWave2 {G1} {cvae}
+wvAddSignal -win $_nWave2 "/CVAE_tb/cvae/clk" "/CVAE_tb/cvae/rst_n" \
+           "/CVAE_tb/cvae/start" "/CVAE_tb/cvae/finish" \
+           "/CVAE_tb/cvae/init_data\[31:0\]" "/CVAE_tb/cvae/sram_state_wea" \
+           "/CVAE_tb/cvae/sram_state_addr\[15:0\]" \
+           "/CVAE_tb/cvae/sram_state_wdata\[31:0\]" \
+           "/CVAE_tb/cvae/sram_weight_addr\[15:0\]" \
+           "/CVAE_tb/cvae/sram_weight_rdata\[31:0\]" \
+           "/CVAE_tb/cvae/sram_bias_addr\[15:0\]" \
+           "/CVAE_tb/cvae/sram_bias_rdata\[31:0\]" \
+           "/CVAE_tb/cvae/seq_lens\[5:0\]"
+wvSetPosition -win $_nWave2 {("cvae" 0)}
+wvSetPosition -win $_nWave2 {("cvae" 13)}
+wvSetPosition -win $_nWave2 {("cvae" 13)}
+wvSetWindowTimeUnit -win $_nWave2 10000.000000 ps
+wvSetCursor -win $_nWave2 222.760395 -snap {("cvae" 2)}
+wvSetCursor -win $_nWave2 153.147772 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 153.147772 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 849.274007 -snap {("cvae" 2)}
+wvSetCursor -win $_nWave2 83.535148 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 473.365840 -snap {("cvae" 3)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectGroup -win $_nWave2 {G2}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 248.430050 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 259.742102 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 244.296801 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 257.784247 -snap {("cvae" 3)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 250.007211 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 256.859704 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 250.442290 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 256.424625 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 247.396738 -snap {("cvae" 1)}
+wvSetCursor -win $_nWave2 248.810744 -snap {("cvae" 1)}
+wvSetCursor -win $_nWave2 251.312448 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 257.294783 -snap {("cvae" 2)}
+wvSetCursor -win $_nWave2 249.137053 -snap {("cvae" 2)}
+wvSetCursor -win $_nWave2 250.115981 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 256.207086 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 250.007211 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 257.621092 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 248.484435 -snap {("cvae" 4)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 243.209103 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 270.619074 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 241.468788 -snap {("cvae" 3)}
+wvSetCursor -win $_nWave2 278.885573 -snap {("cvae" 3)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 696.425352 -snap {("cvae" 1)}
+wvSetCursor -win $_nWave2 698.600747 -snap {("cvae" 1)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 479630.976141 -snap {("cvae" 4)}
+wvSelectSignal -win $_nWave2 {( "cvae" 4 )} 
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("cvae" 0)}
+wvSetPosition -win $_nWave2 {("cvae" 1)}
+wvSetPosition -win $_nWave2 {("cvae" 2)}
+wvSetPosition -win $_nWave2 {("cvae" 3)}
+wvSetPosition -win $_nWave2 {("cvae" 4)}
+wvSetPosition -win $_nWave2 {("cvae" 6)}
+wvSetPosition -win $_nWave2 {("cvae" 7)}
+wvSetPosition -win $_nWave2 {("cvae" 8)}
+wvSetPosition -win $_nWave2 {("cvae" 9)}
+wvSetPosition -win $_nWave2 {("cvae" 10)}
+wvSetPosition -win $_nWave2 {("cvae" 11)}
+wvSetPosition -win $_nWave2 {("cvae" 12)}
+wvSetPosition -win $_nWave2 {("cvae" 13)}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvRenameGroup -win $_nWave2 {G2} {cvae#1}
+wvAddSignal -win $_nWave2 "/CVAE_tb/cvae/clk" "/CVAE_tb/cvae/rst_n" \
+           "/CVAE_tb/cvae/start" "/CVAE_tb/cvae/finish" \
+           "/CVAE_tb/cvae/init_data\[31:0\]" "/CVAE_tb/cvae/sram_state_wea" \
+           "/CVAE_tb/cvae/sram_state_addr\[15:0\]" \
+           "/CVAE_tb/cvae/sram_state_wdata\[31:0\]" \
+           "/CVAE_tb/cvae/sram_weight_addr\[15:0\]" \
+           "/CVAE_tb/cvae/sram_weight_rdata\[31:0\]" \
+           "/CVAE_tb/cvae/sram_bias_addr\[15:0\]" \
+           "/CVAE_tb/cvae/sram_bias_rdata\[31:0\]" \
+           "/CVAE_tb/cvae/seq_lens\[5:0\]"
+wvSetPosition -win $_nWave2 {("cvae#1" 0)}
+wvSetPosition -win $_nWave2 {("cvae#1" 13)}
+wvSetPosition -win $_nWave2 {("cvae#1" 13)}
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvRenameGroup -win $_nWave2 {G3} {gru}
+wvAddSignal -win $_nWave2 "/CVAE_tb/cvae/gru/clk" \
+           "/CVAE_tb/cvae/gru/data_ir\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_iz\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_in\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_hr\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_hz\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_hn\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_hidden_in\[31:0\]" \
+           "/CVAE_tb/cvae/gru/data_hidden_out\[31:0\]"
+wvSetPosition -win $_nWave2 {("gru" 0)}
+wvSetPosition -win $_nWave2 {("gru" 9)}
+wvSetPosition -win $_nWave2 {("gru" 9)}
+wvSetCursor -win $_nWave2 228304.420459 -snap {("G4" 0)}
+wvSelectGroup -win $_nWave2 {G4}
+wvCollapseGroup -win $_nWave2 "cvae"
+wvSelectGroup -win $_nWave2 {G4}
+wvSetCursor -win $_nWave2 229441.656388 -snap {("G4" 0)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 226460.719786 -snap {("cvae#1" 6)}
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSetCursor -win $_nWave2 226150.564533 -snap {("cvae#1" 6)}
+wvSelectSignal -win $_nWave2 {( "cvae#1" 6 )} 
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "cvae#1" 13 )} 
+wvSearchNext -win $_nWave2
+wvSetCursor -win $_nWave2 137.884347 -snap {("cvae#1" 13)}
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+verdiSetFont -font "Bitstream Vera Sans" -size "24"
+verdiSetFont -monoFont "Courier" -monoFontSize "24"
+simSetInteractiveFsdbFile inter.fsdb
+simSetSimMode on
+srcSetPreference -filterPowerAwareInstruments off -profileTime off
+tbvSetPreference -dynamicDumpMDA 1 -dynamicDumpStruct 1 -dynamicDumpSystemCStruct \
+           1 -dynamicDumpSystemCPlain 1 -dynamicDumpSystemCFIFO 1
+wvSetCursor -win $_nWave2 5457.886040 -snap {("gru" 1)}
+wvSetCursor -win $_nWave2 154.545208 -snap {("cvae#1" 13)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+schCreateWindow -delim "." -win $_nSchema1 -scope "CVAE_tb"
+schSelect -win $_nSchema4 -inst "cvae"
+schSelect -win $_nSchema4 -inst "cvae"
+schPushViewIn -win $_nSchema4
+schSelect -win $_nSchema4 -inst "CVAE_top\(@1\):FSM0:188:882:FSM"
+schPushViewIn -win $_nSchema4
+fsmSetCurrentWindow -win $_nState5
+fsmResizeWindow 0 35 2571 1238 -win $_nState5
+fsmResizeWindow 0 35 2571 1238 -win $_nState5
+fsmResizeWindow 0 35 2571 1238 -win $_nState5
+fsmLastView -win $_nState5
+fsmLastView -win $_nState5
+fsmLastView -win $_nState5
+fsmLastView -win $_nState5
+fsmLastView -win $_nState5
+fsmZoomOut -win $_nState5
+fsmZoomOut -win $_nState5
+fsmZoomOut -win $_nState5
+fsmCloseWindow -win $_nState5
+schPopViewUp -win $_nSchema4
+schSelect -win $_nSchema4 -inst "SRAM_WEIGHT_5388x32b"
+schPushViewIn -win $_nSchema4
+schPopViewUp -win $_nSchema4
+schSelect -win $_nSchema4 -inst "cvae"
+schPushViewIn -win $_nSchema4
+schSelect -win $_nSchema4 -inst "gru"
+schSelect -win $_nSchema4 -inst "gru"
+schPushViewIn -win $_nSchema4
+schSelect -win $_nSchema4 -inst "sigmoid_1"
+schPushViewIn -win $_nSchema4
+schPopViewUp -win $_nSchema4
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always0:64:66:Reg"
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always4:84:87:Reg"
+schSelect -win $_nSchema4 -inst "sigmoid_1"
+schPushViewIn -win $_nSchema4
+schPopViewUp -win $_nSchema4
+schPopViewUp -win $_nSchema4
+schZoomIn -win $_nSchema4 -pos 41236 -7866
+schZoomIn -win $_nSchema4 -pos 41235 -7866
+schZoomIn -win $_nSchema4 -pos 41235 -7866
+schZoomIn -win $_nSchema4 -pos 38049 -6767
+schZoomIn -win $_nSchema4 -pos 38049 -6768
+schZoomIn -win $_nSchema4 -pos 38049 -6769
+schZoomOut -win $_nSchema4 -pos 38048 -6768
+schZoomOut -win $_nSchema4 -pos 38048 -6768
+schZoomIn -win $_nSchema4 -pos 38048 -6768
+schZoomIn -win $_nSchema4 -pos 38048 -6768
+schZoomIn -win $_nSchema4 -pos 38048 -6768
+schZoomIn -win $_nSchema4 -pos 38047 -6769
+schZoomIn -win $_nSchema4 -pos 38047 -6769
+schZoomIn -win $_nSchema4 -pos 38047 -6769
+schZoomOut -win $_nSchema4 -pos 38047 -6770
+schZoomOut -win $_nSchema4 -pos 38047 -6770
+schZoomOut -win $_nSchema4 -pos 38047 -6770
+schZoomOut -win $_nSchema4 -pos 38046 -6770
+schZoomOut -win $_nSchema4 -pos 38047 -6771
+schZoomOut -win $_nSchema4 -pos 38046 -6771
+schZoomOut -win $_nSchema4 -pos 38046 -6772
+schZoomOut -win $_nSchema4 -pos 38047 -6772
+schZoomOut -win $_nSchema4 -pos 38047 -6772
+schZoomOut -win $_nSchema4 -pos 38047 -6772
+schZoomOut -win $_nSchema4 -pos 38046 -6772
+schZoomOut -win $_nSchema4 -pos 38046 -6773
+schZoomOut -win $_nSchema4 -pos 49177 21384
+schZoomIn -win $_nSchema4 -pos 74741 29488
+schZoomIn -win $_nSchema4 -pos 74741 29488
+schZoomIn -win $_nSchema4 -pos 74741 29487
+schZoomIn -win $_nSchema4 -pos 74741 29487
+schZoomIn -win $_nSchema4 -pos 74741 29487
+schFit -win $_nSchema4
+schZoomIn -win $_nSchema4 -pos 28183 11647
+schZoomIn -win $_nSchema4 -pos 28182 11646
+schZoomIn -win $_nSchema4 -pos 28182 11646
+schZoomOut -win $_nSchema4
+schZoomIn -win $_nSchema4 -pos 39169 11239
+schZoomIn -win $_nSchema4 -pos 39168 11238
+schZoomIn -win $_nSchema4 -pos 39167 11238
+schZoomIn -win $_nSchema4 -pos 39167 11238
+schZoomIn -win $_nSchema4 -pos 39167 11238
+schZoomOut -win $_nSchema4 -pos 39410 10348
+schZoomOut -win $_nSchema4 -pos 39409 10315
+schZoomOut -win $_nSchema4 -pos 39409 10314
+schZoomOut -win $_nSchema4 -pos 39409 10314
+schZoomOut -win $_nSchema4 -pos 39408 10314
+schZoomIn -win $_nSchema4 -pos 38832 3734
+schZoomIn -win $_nSchema4 -pos 38739 3796
+schZoomIn -win $_nSchema4 -pos 38738 3818
+schZoomIn -win $_nSchema4 -pos 38738 3818
+schZoomIn -win $_nSchema4 -pos 38738 3817
+schSelect -win $_nSchema4 -inst \
+          "CVAE_top\(@1\):Always77:688:691:ComboMemory_hidden_reg\[0:31\]"
+schPushViewIn -win $_nSchema4
+srcSetScope -win $_nTrace1 "CVAE_tb.cvae" -delim "."
+srcSelect -win $_nTrace1 -range {722 732 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schZoomOut -win $_nSchema4 -pos 38406 8325
+schZoomOut -win $_nSchema4 -pos 38405 8326
+schZoomOut -win $_nSchema4 -pos 38405 8325
+schZoomOut -win $_nSchema4 -pos 38176 7791
+schZoomOut -win $_nSchema4 -pos 37842 6481
+schSetOptions -win $_nSchema4 -pan on
+schZoomOut -win $_nSchema4 -pos 45615 17409
+schZoomOut -win $_nSchema4 -pos 45614 17408
+schZoomIn -win $_nSchema4 -pos 124106 55236
+schZoomIn -win $_nSchema4 -pos 124106 55235
+schZoomIn -win $_nSchema4 -pos 124106 55235
+schZoomIn -win $_nSchema4 -pos 124105 55235
+schZoomOut -win $_nSchema4 -pos 126548 57178
+schZoomOut -win $_nSchema4 -pos 126548 57177
+schZoomOut -win $_nSchema4 -pos 126547 57177
+schZoomOut -win $_nSchema4 -pos 126547 57177
+schZoomOut -win $_nSchema4 -pos 126547 57176
+schSelect -win $_nSchema4 -signal "gru_iz_counter_next\[9:0\]"
+schSelect -win $_nSchema4 -signal "fc_hn_start_next"
+schZoomOut -win $_nSchema4 -pos 78211 28605
+schZoomOut -win $_nSchema4 -pos 78210 28604
+schZoomIn -win $_nSchema4 -pos 74841 47765
+schZoomIn -win $_nSchema4 -pos 74840 47765
+schZoomIn -win $_nSchema4 -pos 74841 47764
+schZoomIn -win $_nSchema4 -pos 74841 47763
+schZoomIn -win $_nSchema4 -pos 74841 47763
+schZoomOut -win $_nSchema4 -pos 74857 47979
+schZoomOut -win $_nSchema4 -pos 74858 47979
+schZoomOut -win $_nSchema4 -pos 74858 47979
+schZoomOut -win $_nSchema4 -pos 74858 47979
+schZoomOut -win $_nSchema4 -pos 74857 47979
+schZoomOut -win $_nSchema4 -pos 74857 47978
+schZoomOut -win $_nSchema4 -pos 74857 47978
+schZoomIn -win $_nSchema4 -pos 39359 22168
+schZoomIn -win $_nSchema4 -pos 39358 22168
+schZoomIn -win $_nSchema4 -pos 39357 22167
+schZoomIn -win $_nSchema4 -pos 39357 22167
+schZoomOut -win $_nSchema4 -pos 47298 18021
+schZoomOut -win $_nSchema4 -pos 47298 18021
+schZoomIn -win $_nSchema4 -pos 41527 -2512
+schZoomIn -win $_nSchema4 -pos 41468 -2807
+schZoomIn -win $_nSchema4 -pos 41445 -2873
+schZoomOut -win $_nSchema4 -pos 41445 -2873
+schZoomOut -win $_nSchema4 -pos 41445 -2874
+schZoomOut -win $_nSchema4 -pos 41446 -2875
+schZoomOut -win $_nSchema4 -pos 41445 -2875
+schZoomOut -win $_nSchema4 -pos 41446 -2875
+schZoomIn -win $_nSchema4 -pos 39019 562
+schZoomIn -win $_nSchema4 -pos 39019 561
+schZoomIn -win $_nSchema4 -pos 39018 561
+schZoomIn -win $_nSchema4 -pos 32962 1777
+schZoomOut -win $_nSchema4 -pos 31715 5711
+schZoomOut -win $_nSchema4 -pos 31715 5712
+schZoomOut -win $_nSchema4 -pos 31714 5712
+schZoomOut -win $_nSchema4 -pos 31714 5711
+wvSetCursor -win $_nWave2 4945.446665 -snap {("gru" 9)}
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "gru" 9 )} 
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+schSelect -win $_nSchema4 -inst "FC"
+schPushViewIn -win $_nSchema4
+schZoomIn -win $_nSchema4 -pos 29487 12918
+schZoomOut -win $_nSchema4 -pos 27002 16710
+schSelect -win $_nSchema4 -inst "FullyConnection\(@1\):FSM0:54:252:FSM"
+schPushViewIn -win $_nSchema4
+fsmSetCurrentWindow -win $_nState6
+fsmResizeWindow 0 35 3390 1254 -win $_nState6
+fsmResizeWindow 0 35 3390 1254 -win $_nState6
+fsmResizeWindow 0 35 3390 1254 -win $_nState6
+fsmZoomOut -win $_nState6
+fsmZoomOut -win $_nState6
+fsmZoomOut -win $_nState6
+fsmZoomOut -win $_nState6
+fsmZoomOut -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmZoomIn -win $_nState6
+fsmLastView -win $_nState6
+fsmLastView -win $_nState6
+fsmLastView -win $_nState6
+fsmLastView -win $_nState6
+fsmCloseWindow -win $_nState6
+schPopViewUp -win $_nSchema4
+schZoomOut -win $_nSchema4 -pos 23117 11542
+schZoomOut -win $_nSchema4 -pos 23118 11374
+schZoomOut -win $_nSchema4 -pos 23117 11304
+schZoomIn -win $_nSchema4 -pos 23117 11304
+schZoomIn -win $_nSchema4 -pos 23117 11304
+schZoomIn -win $_nSchema4 -pos 23117 11304
+schZoomIn -win $_nSchema4 -pos 23117 11303
+schZoomIn -win $_nSchema4 -pos 23116 11303
+schZoomIn -win $_nSchema4 -pos 23115 11303
+schZoomOut -win $_nSchema4 -pos 23115 11302
+schZoomOut -win $_nSchema4 -pos 23115 11302
+schZoomOut -win $_nSchema4 -pos 23116 11301
+schZoomOut -win $_nSchema4 -pos 23116 11302
+schZoomOut -win $_nSchema4 -pos 23116 11301
+schZoomOut -win $_nSchema4 -pos 23116 11301
+schSelect -win $_nSchema4 -inst "gru"
+schPushViewIn -win $_nSchema4
+schZoomOut -win $_nSchema4 -pos 21572 7416
+schZoomIn -win $_nSchema4 -pos 21572 7416
+schZoomOut -win $_nSchema4 -pos 21573 7416
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always1:67:70:Combo"
+schPushViewIn -win $_nSchema4
+srcSetScope -win $_nTrace1 "CVAE_tb.cvae.gru" -delim "."
+srcSelect -win $_nTrace1 -range {67 70 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schDeselectAll -win $_nSchema4
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always0:64:66:Reg"
+schPushViewIn -win $_nSchema4
+srcSelect -win $_nTrace1 -range {64 66 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always6:94:96:Reg"
+schPushViewIn -win $_nSchema4
+srcSelect -win $_nTrace1 -range {94 96 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always10:114:117:Reg"
+schPushViewIn -win $_nSchema4
+srcSelect -win $_nTrace1 -range {114 117 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always8:103:105:Reg"
+schPushViewIn -win $_nSchema4
+srcSelect -win $_nTrace1 -range {103 105 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always3:77:80:Combo"
+schPushViewIn -win $_nSchema4
+srcSelect -win $_nTrace1 -range {77 80 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema4 -inst "GRU\(@1\):Always1:67:70:Combo"
+schPushViewIn -win $_nSchema4
+srcSelect -win $_nTrace1 -range {67 70 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema4 -inst "tanh"
+schPushViewIn -win $_nSchema4
+verdiDockWidgetHide -dock windowDock_nSchema_4
+schCreateWindow -delim "." -win $_nSchema1 -scope "CVAE_tb.cvae.gru"
+schSelect -win $_nSchema7 -inst "GRU\(@1\):Always2:74:76:Reg"
+schPushViewIn -win $_nSchema7
+srcSelect -win $_nTrace1 -range {74 76 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schDeselectAll -win $_nSchema7
+schSelect -win $_nSchema7 -inst "GRU\(@1\):Always15:140:142:RegCombo"
+schPushViewIn -win $_nSchema7
+srcSelect -win $_nTrace1 -range {140 142 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema7 -inst "GRU\(@1\):Always15:140:142:RegCombo"
+schDeselectAll -win $_nSchema7
+schSelect -win $_nSchema7 -inst "sigmoid_0"
+schSelect -win $_nSchema7 -inst "sigmoid_0"
+schPushViewIn -win $_nSchema7
+schSelect -win $_nSchema7 -inst "cordic\(@1\):Always0:153:155:Reg"
+schPushViewIn -win $_nSchema7
+srcSetScope -win $_nTrace1 "CVAE_tb.cvae.gru.sigmoid_0" -delim "."
+srcSelect -win $_nTrace1 -range {153 155 1 2 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schZoomIn -win $_nSchema7 -pos 11872 -2511
+schZoomIn -win $_nSchema7 -pos 11871 -2512
+schZoomIn -win $_nSchema7 -pos 11871 -2512
+schZoomIn -win $_nSchema7 -pos 11870 -2512
+schZoomIn -win $_nSchema7 -pos 11869 -2513
+schZoomIn -win $_nSchema7 -pos 11869 -2513
+schZoomIn -win $_nSchema7 -pos 11868 -2513
+schZoomOut -win $_nSchema7 -pos 11869 -2513
+schZoomOut -win $_nSchema7 -pos 11869 -2514
+schZoomOut -win $_nSchema7 -pos 11869 -2515
+schSelect -win $_nSchema7 -inst "np_rhc1"
+schPushViewIn -win $_nSchema7
+schZoomOut -win $_nSchema7 -pos 15631 5073
+schPopViewUp -win $_nSchema7
+schZoomOut -win $_nSchema7 -pos 24788 8124
+schZoomOut -win $_nSchema7 -pos 24788 8124
+schZoomOut -win $_nSchema7 -pos 32953 8807
+schZoomOut -win $_nSchema7 -pos 32953 8807
+schZoomOut -win $_nSchema7 -pos 32953 8807
+schSelect -win $_nSchema7 -inst "cordic\(@1\):SigOp2:20:20:Combo"
+schPushViewIn -win $_nSchema7
+srcSelect -win $_nTrace1 -range {20 20 1 36 1 1}
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schZoomOut -win $_nSchema7 -pos 10592 -293
+schZoomOut -win $_nSchema7 -pos 10592 -293
+schZoomIn -win $_nSchema7 -pos 23592 18125
+schZoomIn -win $_nSchema7 -pos 23591 18125
+schFit -win $_nSchema7
+schZoomIn -win $_nSchema7 -pos 143956 37679
+schZoomIn -win $_nSchema7 -pos 143956 37679
+schZoomIn -win $_nSchema7 -pos 143956 37679
+schZoomIn -win $_nSchema7 -pos 143956 37678
+schZoomIn -win $_nSchema7 -pos 143956 37678
+schSelect -win $_nSchema7 -inst "cordic\(@1\):SigOp4:130:130:Combo"
+schPushViewIn -win $_nSchema7
+srcSelect -win $_nTrace1 -range {130 130 1 15 1 1}
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSetOptions -win $_nSchema7 -pan on
+schZoomOut -win $_nSchema7 -pos 225722 70285
+schZoomOut -win $_nSchema7 -pos 225722 70285
+schZoomOut -win $_nSchema7 -pos 225722 70286
+schZoomOut -win $_nSchema7 -pos 225621 70286
+schZoomOut -win $_nSchema7 -pos 225621 70285
+schZoomOut -win $_nSchema7 -pos 164265 39213
+schZoomOut -win $_nSchema7 -pos 164265 39213
+schZoomIn -win $_nSchema7 -pos 124567 17951
+schZoomIn -win $_nSchema7 -pos 124566 17950
+schZoomOut -win $_nSchema7 -pos 124566 17951
+schZoomOut -win $_nSchema7 -pos 124566 17950
+verdiDockWidgetHide -dock windowDock_nSchema_7
+schCreateWindow -delim "." -win $_nSchema1 -scope "CVAE_tb.cvae.gru.sigmoid_0"
+srcHBSelect "CVAE_tb.cvae.gru.sigmoid_0.np_rhc0" -win $_nTrace1
+srcHBSelect "CVAE_tb.cvae.gru.sigmoid_0.np_rhc0" -win $_nTrace1
+srcSetScope -win $_nTrace1 "CVAE_tb.cvae.gru.sigmoid_0.np_rhc0" -delim "."
+srcHBSelect "CVAE_tb.cvae.gru.sigmoid_0.np_rhc0" -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope \
+           "CVAE_tb.cvae.gru.sigmoid_0.np_rhc0"
+srcHBSelect "CVAE_tb.cvae.FC" -win $_nTrace1
+srcSetScope -win $_nTrace1 "CVAE_tb.cvae.FC" -delim "."
+srcHBSelect "CVAE_tb.cvae.FC" -win $_nTrace1
+srcHBSelect "CVAE_tb.cvae.gru" -win $_nTrace1
+srcSetScope -win $_nTrace1 "CVAE_tb.cvae.gru" -delim "."
+srcHBSelect "CVAE_tb.cvae.gru" -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope "CVAE_tb.cvae.gru"
+debExit

@@ -1,0 +1,51 @@
+Command: vcs -full64 -sverilog -debug_all -timescale=1ns/1ps -f rtl.f -l com.log \
+-fsdb +define+fsdb
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Mon Mar 13 18:54:21 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file './sim/CVAE_tb.v'
+Parsing design file './sim/CVAE_top.v'
+Parsing design file './sim/FullyConnection.v'
+Parsing design file './sim/rams_sp_wf.v'
+Parsing design file '../RTL/GRU.v'
+Parsing design file '../RTL/cordic.v'
+Parsing design file '../RTL/VLC.v'
+Parsing design file '../RTL/P_RHC.v'
+Parsing design file '../RTL/NP_RHC.v'
+Top Level Modules:
+       CVAE_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+recompiling module CVAE_tb
+recompiling module GRU
+recompiling module cordic
+All of 3 modules done
+make[1]: Entering directory '/home/ICer/work/GRU_AI_Accelerator/applicaction/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+-L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib   objs/amcQw_d.o   _117831_archive_1.so \
+SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/ICer/work/GRU_AI_Accelerator/applicaction/csrc' \
+
+CPU time: .433 seconds to compile + .211 seconds to elab + .171 seconds to link

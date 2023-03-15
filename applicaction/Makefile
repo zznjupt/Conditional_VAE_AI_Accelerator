@@ -10,12 +10,13 @@ cad_dir = spyglass-* nWaveLog* BSSLib.lib*
 all: COM SIM
 
 COM:
-	vcs -f ${SIM_SRC}
+	vcs -full64 -sverilog -debug_all -timescale=1ns/1ps -f ${SIM_SRC}  -l com.log -fsdb +define+fsdb
 
 SIM:
 	./simv -l sim.log
 	
-syn:
+verdi:
+	verdi -sv -f ${SIM_SRC} -ssf *.fsdb -nologo
 	
 clean:
 	-rm -f ${BAK} ${LOG}
